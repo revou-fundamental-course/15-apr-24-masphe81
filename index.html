@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="converter">
+      <h2>Temperature Converter by Suparyanto</h2>
+      <div class="input-container">
+        <label for="celsius">Celsius:</label>
+        <input type="number" id="celsius" />
+      </div>
+      <div class="input-container">
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input type="number" id="fahrenheit" />
+      </div>
+      <div class="btn-container">
+        <button id="button-convert" onclick="convert()">Convert</button>
+        <button onclick="reset()">Reset</button>
+        <button id="button-reverse" onclick="reverse()">Reverse</button>
+      </div>
+      <div class="info">
+        <p><b>Formula:</b></p>
+        <p>Celsius to Fahrenheit: (°C * 9/5) + 32</p>
+        <p>Fahrenheit to Celsius: (°F - 32) * 5/9</p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
